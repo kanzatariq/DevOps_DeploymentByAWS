@@ -3,7 +3,7 @@ import type { AccentColor, BaseColor } from "./colors";
 // IMPORTANT: set these for GitHub Pages (https://kanzatariq.github.io/<repo>/)
 // If the repo is named kanzatariq.github.io, use BASE = '/' instead.
 export const SITE = "https://kanzatariq.github.io";
-export const BASE = "/blog-template";
+export const BASE = "/DevOps_DeploymentByAWS";
 
 // MORE SETTINGS:
 
@@ -25,7 +25,7 @@ export const LICENSE = "MIT licensed.";
 // will be used to identify your bluesky account, so that likes and comments can be shown on your posts
 export const BLUESKY_IDENTIFIER = "flo-bit.dev";
 
-export const SOURCE_LINK = "https://github.com/kanzatariq/blog-template";
+export const SOURCE_LINK = "https://github.com/kanzatariq/DevOps_DeploymentByAWS";
 
 // will be used to set the base color of the blog
 export const BASE_COLOR: BaseColor = "neutral";
