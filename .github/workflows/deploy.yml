@@ -5,21 +5,25 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *" # every 12 hours
+    - cron: "0 */12 * * *"
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install, build, and upload your site
+      - name: Install, build, and upload site
         uses: withastro/action@v3
 
   deploy:

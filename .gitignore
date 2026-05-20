@@ -24,3 +24,11 @@ pnpm-debug.log*
 .idea/
 
 public/pagefind/
+
+# Terraform (local only — never commit)
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/crash.log
+terraform/override.tf
+terraform/*_override.tf
